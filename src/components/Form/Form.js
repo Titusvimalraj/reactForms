@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import classes from './Form.module.css';
 import { useParams } from 'react-router-dom';
 import Api from '../../Api/Api';
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,7 +6,6 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import CountriesAPI from '../../Api/CountriesAPI';
@@ -118,7 +116,7 @@ const Form = () => {
                 }
             })(country);
         }
-    }, [country])
+    }, [country, state])
 
     useEffect(() => {
         if (city) {
@@ -138,7 +136,7 @@ const Form = () => {
                 }
             })(state);
         }
-    }, [state])
+    }, [state, city])
 
     const updateCountry = (event) => {
         const currentCountry = event.target.value;
