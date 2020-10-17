@@ -398,10 +398,10 @@ const Form = () => {
                         <FormControl component="fieldset">
                             <FormLabel component="legend">Marital Status</FormLabel>
                             <RadioGroup required aria-label="maritalStatus" name="maritalStatus" value={maritalStatus} onChange={updateMaritalStatus}>
-                                <FormControlLabel value="single" control={maritalStatus === 'single' ? <Radio checked /> : <Radio />} label="single" />
-                                <FormControlLabel value="married" control={maritalStatus === 'married' ? <Radio checked /> : <Radio />} label="married" />
-                                <FormControlLabel value="widowed" control={maritalStatus === 'widowed' ? <Radio checked /> : <Radio />} label="widowed" />
-                                <FormControlLabel value="divorced" control={maritalStatus === 'divorced' ? <Radio checked /> : <Radio />} label="divorced" />
+                                <FormControlLabel value="single" control={maritalStatus === 'single' ? <Radio checked /> : <Radio />} label="Single" />
+                                <FormControlLabel value="married" control={maritalStatus === 'married' ? <Radio checked /> : <Radio />} label="Married" />
+                                <FormControlLabel value="widowed" control={maritalStatus === 'widowed' ? <Radio checked /> : <Radio />} label="Widowed" />
+                                <FormControlLabel value="divorced" control={maritalStatus === 'divorced' ? <Radio checked /> : <Radio />} label="Divorced" />
                             </RadioGroup>
                         </FormControl>
                     </div>
