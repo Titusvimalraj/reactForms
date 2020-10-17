@@ -390,18 +390,18 @@ const Form = () => {
                         <FormControl component="fieldset">
                             <FormLabel component="legend">Gender</FormLabel>
                             <RadioGroup required aria-label="gender" name="gender" value={gender} onChange={updateGender}>
-                                <FormControlLabel value="female" control={<Radio />} label="Female" />
-                                <FormControlLabel value="male" control={<Radio checked />} label="Male" />
-                                <FormControlLabel value="other" control={<Radio />} label="Other" />
+                                <FormControlLabel value="female" control={gender === 'female' ? <Radio checked /> : <Radio />} label="Female" />
+                                <FormControlLabel value="male" control={gender === 'male' ? <Radio checked /> : <Radio />} label="Male" />
+                                <FormControlLabel value="other" control={gender === 'other' ? <Radio checked /> : <Radio />} label="Other" />
                             </RadioGroup>
                         </FormControl>
                         <FormControl component="fieldset">
                             <FormLabel component="legend">Marital Status</FormLabel>
                             <RadioGroup required aria-label="maritalStatus" name="maritalStatus" value={maritalStatus} onChange={updateMaritalStatus}>
-                                <FormControlLabel value="single" control={<Radio checked />} label="single" />
-                                <FormControlLabel value="married" control={<Radio />} label="married" />
-                                <FormControlLabel value="widowed" control={<Radio />} label="widowed" />
-                                <FormControlLabel value="divorced" control={<Radio />} label="divorced" />
+                                <FormControlLabel value="single" control={maritalStatus === 'single' ? <Radio checked /> : <Radio />} label="single" />
+                                <FormControlLabel value="married" control={maritalStatus === 'married' ? <Radio checked /> : <Radio />} label="married" />
+                                <FormControlLabel value="widowed" control={maritalStatus === 'widowed' ? <Radio checked /> : <Radio />} label="widowed" />
+                                <FormControlLabel value="divorced" control={maritalStatus === 'divorced' ? <Radio checked /> : <Radio />} label="divorced" />
                             </RadioGroup>
                         </FormControl>
                     </div>
