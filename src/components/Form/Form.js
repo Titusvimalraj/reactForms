@@ -90,7 +90,7 @@ const Form = () => {
                 console.log(error);
                 swal(
                     <div>
-                        <h1>Error!</h1>
+                        <h1 style={{ color: 'black' }}>Error!</h1>
                         <p>{error}</p>
                     </div>
                 )
@@ -109,7 +109,7 @@ const Form = () => {
                     console.log(error);
                     swal(
                         <div>
-                            <h1>Error!</h1>
+                            <h1 style={{ color: 'black' }}>Error!</h1>
                             <p>{error}</p>
                         </div>
                     )
@@ -129,7 +129,7 @@ const Form = () => {
                     console.log(error);
                     swal(
                         <div>
-                            <h1>Error!</h1>
+                            <h1 style={{ color: 'black' }}>Error!</h1>
                             <p>{error}</p>
                         </div>
                     )
@@ -154,7 +154,7 @@ const Form = () => {
                 console.log(error);
                 swal(
                     <div>
-                        <h1>Error!</h1>
+                        <h1 style={{ color: 'black' }}>Error!</h1>
                         <p>{error}</p>
                     </div>
                 )
@@ -180,7 +180,7 @@ const Form = () => {
                 console.log(error);
                 swal(
                     <div>
-                        <h1>Error!</h1>
+                        <h1 style={{ color: 'black' }}>Error!</h1>
                         <p>{error}</p>
                     </div>
                 )
@@ -211,7 +211,7 @@ const Form = () => {
                 if (response.status === 200) {
                     swal(
                         <div>
-                            <h1>Success!</h1>
+                            <h1 style={{ color: 'black' }}>Success!</h1>
                             <p>{'Successfully Updated the Form'}</p>
                         </div>
                     )
@@ -222,7 +222,7 @@ const Form = () => {
                 console.log(error);
                 swal(
                     <div>
-                        <h1>Error!</h1>
+                        <h1 style={{ color: 'black' }}>Error!</h1>
                         <p>{error}</p>
                     </div>
                 )
@@ -233,7 +233,7 @@ const Form = () => {
                 if (response.status === 200) {
                     swal(
                         <div>
-                            <h1>Success!</h1>
+                            <h1 style={{ color: 'black' }}>Success!</h1>
                             <p>{'Successfully Submitted the Form'}</p>
                         </div>
                     )
@@ -246,7 +246,7 @@ const Form = () => {
                 console.log(error);
                 swal(
                     <div>
-                        <h1>Error!</h1>
+                        <h1 style={{ color: 'black' }}>Error!</h1>
                         <p>{error}</p>
                     </div>
                 )
