@@ -436,7 +436,10 @@ const useStyles = makeStyles((theme) => ({
     },
     spacing: {
         marginTop: 15
-    }
+    },
+    formControl: {
+        minWidth: 100
+    },
 }));
 
 export default Form;
