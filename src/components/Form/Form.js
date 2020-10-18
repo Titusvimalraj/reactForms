@@ -264,6 +264,7 @@ const Form = () => {
                         id='name'
                         label="Name"
                         variant="outlined"
+                        placeholder="Titus vimal raj"
                         value={name}
                         onChange={event => { setname(event.target.value); setFormData({ ...formData, name: event.target.value }); }}
                     />
@@ -271,6 +272,7 @@ const Form = () => {
                             required
                             id='email'
                             label="Email"
+                            placeholder="user@gmail.com"
                             variant="outlined"
                             value={email}
                             onChange={event => { setemail(event.target.value); setFormData({ ...formData, email: event.target.value }); }}
@@ -284,6 +286,7 @@ const Form = () => {
                                     required
                                     labelId="country-label"
                                     id="country"
+                                    placeholder="India"
                                     value={country}
                                     onChange={updateCountry}
                                 >
@@ -308,6 +311,7 @@ const Form = () => {
                                                 required
                                                 labelId="state-label"
                                                 id="state"
+                                                placeholder="Tamil Nadu"
                                                 value={state}
                                                 onChange={updateState}
                                             >
@@ -333,6 +337,7 @@ const Form = () => {
                                         required
                                         labelId="city-label"
                                         id="city"
+                                        placeholder="Chennai"
                                         value={city}
                                         onChange={event => { setcity(event.target.value); setFormData({ ...formData, city: event.target.value }) }}
                                     >
@@ -355,6 +360,7 @@ const Form = () => {
                             id='addressLine1'
                             label="Address Line 1"
                             variant="outlined"
+                            placeholder="First Street"
                             value={addressLine1}
                             onChange={event => { setaddressLine1(event.target.value); setFormData({ ...formData, addressLine1: event.target.value }); }}
                         />
@@ -363,6 +369,7 @@ const Form = () => {
                             required
                             id='addressLine2'
                             label="Address Line 2"
+                            placeholder="Colony"
                             variant="outlined"
                             value={addressLine2}
                             onChange={event => { setaddressLine2(event.target.value); setFormData({ ...formData, addressLine2: event.target.value }); }}
@@ -373,6 +380,7 @@ const Form = () => {
                         id='favColor'
                         label="Favorite Color"
                         variant="outlined"
+                        placeholder="Blue"
                         value={favColor}
                         onChange={event => { setfavColor(event.target.value); setFormData({ ...formData, favColor: event.target.value }); }}
                     />
@@ -381,6 +389,7 @@ const Form = () => {
                             id='favFood'
                             label="Favorite Food"
                             variant="outlined"
+                            placeholder="Noodles"
                             value={favFood}
                             onChange={event => { setfavFood(event.target.value); setFormData({ ...formData, favFood: event.target.value }); }}
                         /></div>
